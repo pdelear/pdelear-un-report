@@ -6,3 +6,5 @@ Day 1 (10-20):
 	We then learned about the Unix shell
 
 	Finally we learned about git and using git in the command line
+
+Authors: Patrick & Zhaoyi
