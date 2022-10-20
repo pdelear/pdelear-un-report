@@ -1,0 +1,8 @@
+This is a report project for the UM caprentries workshop on 10-20-2022 and 10-21-2022
+
+Day 1 (10-20):
+	We learned about R and R plotting using ggplot
+	
+	We then learned about the Unix shell
+
+	Finally we learned about git and using git in the command line
