@@ -140,5 +140,32 @@ gapminder_co2 %>%
 
 write_csv(gapminder_co2, 'data/gapminder_co2.csv')
 
+# Analyzing / plotting combined data
+
+ggplot(gapminder_co2, aes(x = gdpPercap, y = per_capita_emissions)) + 
+  geom_point() + 
+  labs(x = 'GDP (per capita)', y = 'CO2 emitted (per capita)',
+       title = "There is a strong association between a nation's GPD \nand the amount of CO2 it produces")
+# fit a line to our data
+
+ggplot(gapminder_co2, aes(x = gdpPercap, y = per_capita_emissions)) + 
+  geom_point() + 
+  labs(x = 'GDP (per capita)', y = 'CO2 emitted (per capita)',
+       title = "There is a strong association between a nation's GPD \nand the amount of CO2 it produces") + 
+  geom_smooth()
+
+## fit a straight line to our data
+
+ggplot(gapminder_co2, aes(x = gdpPercap, y = per_capita_emissions)) + 
+  geom_point() + 
+  labs(x = 'GDP (per capita)', y = 'CO2 emitted (per capita)',
+       title = "There is a strong association between a nation's GPD \nand the amount of CO2 it produces") +
+  geom_smooth(method = 'lm')
+
+
+
+
+
+
 
 
